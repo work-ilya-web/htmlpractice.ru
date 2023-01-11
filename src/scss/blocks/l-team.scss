@@ -1,0 +1,143 @@
+.l-team {
+	padding-top: 160px;
+	padding-bottom: 120px;
+	&__title {
+		max-width: 1010px;
+	}
+	&__row {
+		margin-top: 80px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: -48px;
+	}
+	&__coll {
+		width: calc(50% - 24px);
+		position: relative;
+		border-radius: 16px;
+		overflow: hidden;
+		z-index: 10;
+		padding: 90px 100px 56px;
+		text-align: center;
+		margin-bottom: 48px;
+	}
+	&__bg {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;
+		left: 0px;
+		z-index: -1;
+		background-color: #e4eef3;
+		&--2 {
+			background-color: #e0f0ea;
+		}
+		&--3 {
+			background-color: #e8e4f1;
+		}
+		&--4 {
+			background-color: #f4eae1;
+		}
+	}
+	&__img {
+		width: 320px;
+		height: 320px;
+		margin: 0px auto 80px;
+	}
+	&__name {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 28px;
+		color: #181b26;
+		margin-bottom: 16px;
+	}
+	&__item {
+		font-size: 19px;
+		line-height: 28px;
+		letter-spacing: 0.0164em;
+		color: #737587;
+	}
+}
+@media (max-width: 1400px) {
+	.l-team {
+		padding-top: 120px;
+		padding-bottom: 100px;
+	}
+}
+@media (max-width: 1320px) {
+	.l-team {
+		padding-top: 60px;
+		&__row {
+			margin-top: 40px;
+			margin-bottom: -24px;
+		}
+		&__coll {
+			width: calc(50% - 12px);
+			padding: 50px;
+			margin-bottom: 24px;
+		}
+		&__img {
+			width: 280px;
+			height: 280px;
+			margin-bottom: 45px;
+		}
+		&__item {
+			font-size: 18px;
+			line-height: 24px;
+		}
+	}
+}
+@media (max-width: 1190px) {
+	.l-team {
+		padding-top: 20px;
+		padding-bottom: 80px;
+		&__row {
+			margin-top: 30px;
+		}
+		&__coll {
+			padding: 50px 25px 30px;
+		}
+		&__img {
+			width: 220px;
+			height: 220px;
+			margin-bottom: 30px;
+		}
+	}
+}
+@media (max-width: 1010px) {
+	.l-team {
+		padding-top: 0px;
+		&__coll {
+			width: calc(50% - 10px);
+			padding: 30px 15px 20px;
+			margin-bottom: 20px;
+		}
+		&__img {
+			width: 180px;
+			height: 180px;
+			margin-bottom: 25px;
+		}
+		&__name {
+			font-size: 18px;
+			line-height: 22px;
+			margin-bottom: 12px;
+		}
+		&__item {
+			font-size: 16px;
+			line-height: 20px;
+		}
+	}
+}
+@media (max-width: 760px) {
+	.l-team {
+		padding-bottom: 60px;
+		&__coll {
+			width: 100%;
+		}
+		&__img {
+			width: 150px;
+			height: 150px;
+			margin-bottom: 20px;
+		}
+	}
+}

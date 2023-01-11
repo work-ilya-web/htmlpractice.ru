@@ -1,0 +1,137 @@
+.catalog {
+    padding: 155px 0 156px;
+    &__title {
+        position: relative;
+        display: flex;
+        width: max-content;
+        justify-content: center;
+        margin: 0 auto 160px;
+        text-align: center;
+        padding-right: 3px;
+    }
+    &__quantity {
+        position: absolute;
+        top: 13px;
+        right: -23px;
+        font-size: 16px;
+        line-height: 16px;
+        font-family: "Arial";
+        font-weight: 400;
+        letter-spacing: 0.0148em;
+    }
+    &__subtitle {
+        font-size: 16px;
+        line-height: 16px;
+        color: #737587;
+        text-align: center;
+        letter-spacing: 0.0148em;
+        margin-right: 8px;
+        &--next-row {
+            display: none;
+        }
+    }
+    .likes {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        gap: 12px;
+        margin: 0;
+        &__like {
+            transform: translateY(-200%);
+            opacity: 0;
+            transition: 0.3s ease-in-out;
+            &:nth-child(1) {
+                transition-delay: 0.05s;
+            }
+        }
+        &__icon {
+            width: 64px;
+            height: 64px;
+            gap: 4px;
+        }
+        svg {
+            position: inherit;
+            top: 0;
+            left: 0;
+            transform: translate(0, 0);
+        }
+        span {
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.0148em;
+        }
+    }
+}
+
+@media screen and (max-width: 1320px) {
+    .catalog {
+        &__subtitle {
+            margin-right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1190px) {
+    .catalog {
+        padding: 100px 0;
+        &__title {
+            margin: 0 auto 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 1010px) {
+    .catalog {
+        padding: 80px 0;
+        &__title {
+            margin: 0 auto 60px;
+        }
+        .likes {
+            top: 10px;
+            right: 10px;
+            &__like {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            &__icon {
+                width: 45px;
+                height: 45px;
+                gap: 2px;
+                svg {
+                    width: 12px;
+                    flex-shrink: 0;
+                }
+            }
+            span {
+                font-size: 12px;
+            }
+        }
+        .info {
+            opacity: 1;
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .catalog {
+        &__title {
+            font-size: 42px;
+            line-height: 40px;
+        }
+        &__quantity {
+            top: 0;
+            font-size: 14px;
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .catalog {
+        &__subtitle {
+            &--next-row {
+                display: block;
+            }
+        }
+    }
+}

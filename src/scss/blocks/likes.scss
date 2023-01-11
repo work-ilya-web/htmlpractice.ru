@@ -1,0 +1,54 @@
+.likes {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-right: 24px;
+    margin-left: auto;
+    &__like {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.0148em;
+        cursor: pointer;
+    }
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        position: relative;
+        overflow: hidden;
+        transition: 0.3s ease-in-out;
+        svg {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            flex-shrink: 0;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+        }
+        &--like {
+            background: #3da976;
+            &:hover {
+                transform: scale(1.06);
+            }
+            i {
+                background: #2a9764;
+            }
+        }
+        &--dislike {
+            background: #dc5c5c;
+            &:hover {
+                transform: scale(1.06);
+            }
+            i {
+                background: #d33d3d;
+            }
+        }
+    }
+}

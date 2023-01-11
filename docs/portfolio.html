@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>htmlpractice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:image" content="">
+	<meta property="og:image:width" content="250">
+	<meta property="og:image:height" content="250">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <main class="main">
+
+
+<header class="header  " id="temp-id-header">
+	<div class="wrapper header__wrap flex">
+		<div class="header__first">
+			<a href="#" class="logo">
+				<img src="img/icons/logo.svg" alt="">
+			</a>
+		</div>
+		<div class="header__container">
+			<nav class="header__menu">
+				<ul>
+					<li>
+						<a href="#">Как это работает</a>
+					</li>
+					<li>
+						<a href="#">Каталог</a>
+					</li>
+					<li>
+						<a href="#">Верстальщикам</a>
+					</li>
+					<li>
+						<a href="#">Дизайнерам</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__links">
+				<a href="#" class="header__link entry--js">Вход</a>
+				<a href="#" class="header__link registration--js">Регистрация</a>
+			</div>
+		</div>
+		<div class="header__last flex">
+			<a href="#" class="header__link entry--js">Вход</a>
+			<a href="#" class="header__link registration--js">Регистрация</a>
+		</div>
+		<div class="header__burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</header>
+
+
+<section class="portfolio">
+
+    <img src="./img/porfolio/avatar.png" alt="" class="portfolio__avatar">
+    <div class="portfolio__title h1">
+        Уфимцев Андрей
+    </div>
+    <div class="wrapper">
+        <div class="portfolio__contacts">
+            <div class="portfolio__prof">
+                Frontend developer
+            </div>
+            <a href="" class="portfolio__link">
+                +7 (904) 543 54
+            </a>
+            <a href="" class="portfolio__link">
+                ufimcev99@gmail.com
+            </a>
+        </div>
+    </div>
+    <div class="grid-wrapper">
+        <div class="wrapper">
+            <div class="grid-contents">
+                <div class="grid-contents__item">
+                    <div class="grid-contents__title grid-contents__title--span">
+                        Опыт <span>10 лет</span>
+                    </div>
+                </div>
+                <div class="grid-contents__item grid-contents__item--myself">
+                    <div class="grid-contents__title">
+                        Обо мне
+                    </div>
+                    <div class="grid-contents__line"></div>
+                    <div class="grid-contents__text">
+                        Трудоголик до мозга гостей. Перфекционист. Постоянно обучаюсь новому.
+                    </div>
+                </div>
+                <div class="grid-contents__item grid-contents__item--skills">
+                    <div class="grid-contents__title">
+                        Навыки
+                    </div>
+                    <div class="grid-contents__line"></div>
+                    <div class="grid-contents__text">
+                        Cоздание сайтов: от Landing page до eCommerce проектов, HTML валидная, адаптивная верстка.
+                    </div>
+                    <div class="grid-contents__text">
+                        Посадка и разработка сайтов "под ключ" на CMS: 1С-Битрикс, Wordpress, Joomla, ModX, Opencart.
+                        Интеграция и настройка CRM Битрикс 24
+                    </div>
+                </div>
+                <div class="grid-contents__item grid-contents__item--author">
+                    <div class="grid-contents__title">
+                        Контакты
+                    </div>
+                    <div class="grid-contents__line"></div>
+                    <div class="grid-contents__author-contacts">
+                        <div class="grid-contents__author-item">
+                            <span>
+                                тел
+                            </span>
+                            <a href="">
+                                +7 (904) 543 54
+                            </a>
+                        </div>
+                        <div class="grid-contents__author-item">
+                            <span>
+                                email
+                            </span>
+                            <a href="">
+                                ufimcev99@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-contents__line grid-contents__line--last"></div>
+                    <div class="grid-contents__socials">
+                        <a href="" class="btn"> <i></i> <span> vk </span> </a>
+                        <a href="" class="btn"> <i></i> <span> behance </span> </a>
+                        <a href="" class="btn"> <i></i> <span> dribbble </span> </a>
+                        <a href="" class="btn"> <i></i> <span> telegram </span> </a>
+                        <a href="" class="btn"> <i></i> <span> instagram </span> </a>
+                    </div>
+                </div>
+                <div class="grid-contents__item grid-contents__item--status">
+                    <div class="grid-contents__title">
+                        Статус
+                    </div>
+                    <div class="grid-contents__line"></div>
+                    <div class="grid-contents__status">
+                        <label class="grid-contents__switch">
+                            <input type="checkbox" onclick="switchMode()" checked id="switch-mode">
+                            <span class="slider round"></span>
+                        </label>
+                        <div class="grid-contents__text grid-contents__text--free">
+                            Свободен для проектов
+                        </div>
+                        <div class="grid-contents__text grid-contents__text--busy">
+                            В данный момент занят
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-list">
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--medium">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Средний
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Блог.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--hard">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Трудный
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Коллекция.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--easy">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Легкий
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Контакты.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--medium">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Средний
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/проекты.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--hard">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Трудный
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--easy">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Легкий
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--medium">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Средний
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--hard">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Трудный
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--easy">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Легкий
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--medium">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Средний
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--hard">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Трудный
+                        </div>
+                    </div>
+                </a>
+                <a href="" class="project-list__item">
+                    <div class="project-list__img-wrap">
+                        <img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+                    </div>
+                    <div class="project-list__layer"></div>
+                    <div class="project-list__layer-second"></div>
+                    <div class="info">
+                        <div class="info__title">
+                            Lithops - Open Source Typeface
+                        </div>
+                        <div class="info__category">
+                            Интефейс
+                        </div>
+                        <div class="info__level info__level--easy">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Легкий
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+	<div class="wrapper footer__wrap flex">
+		<div class="footer__first">
+			<a href="#" class="logo">
+				<img src="img/icons/logo.svg" alt="">
+			</a>
+		</div>
+		<a href="#" class="footer__confidentiality">Политика конфиденциальности</a>
+		<div class="footer__last flex">
+			<a href="#" class="footer__link">Вход</a>
+			<a href="#" class="footer__link">Регистрация</a>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+    <script src="js/libs.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

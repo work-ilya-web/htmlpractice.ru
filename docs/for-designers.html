@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>htmlpractice</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="format-detection" content="address=no">
+	<meta property="og:site_name" content="">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:image" content="">
+	<meta property="og:image:width" content="250">
+	<meta property="og:image:height" content="250">
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.svg">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <main class="main">
+
+
+<header class="header  " id="temp-id-header">
+	<div class="wrapper header__wrap flex">
+		<div class="header__first">
+			<a href="#" class="logo">
+				<img src="img/icons/logo.svg" alt="">
+			</a>
+		</div>
+		<div class="header__container">
+			<nav class="header__menu">
+				<ul>
+					<li>
+						<a href="#">Как это работает</a>
+					</li>
+					<li>
+						<a href="#">Каталог</a>
+					</li>
+					<li>
+						<a href="#">Верстальщикам</a>
+					</li>
+					<li>
+						<a href="#">Дизайнерам</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="header__links">
+				<a href="#" class="header__link entry--js">Вход</a>
+				<a href="#" class="header__link registration--js">Регистрация</a>
+			</div>
+		</div>
+		<div class="header__last flex">
+			<a href="#" class="header__link entry--js">Вход</a>
+			<a href="#" class="header__link registration--js">Регистрация</a>
+		</div>
+		<div class="header__burger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</header>
+
+
+<section class="for-designers">
+    <div class="for-designers__title h1">
+        Дизайнерам
+    </div>
+    <div class="for-designers__subtitle">
+        Если у вас есть макеты, которыми вы могли бы поделиться для размещения на нашем сайте - вы можете <br
+            class="for-designers__space"> отправить
+        их нам через форму ниже. В замен: на странице с вашим макетом будут опубликованы <br
+            class="for-designers__space">
+        контактные
+        данные для
+        связи
+        с вами
+    </div>
+    <div class="for-designers__selection">
+        Мы внимательно отбираем работы для публикации на сайте, если ваша <br class="for-designers__space"> работ нас не
+        пройдет – мы
+        сообщим причину
+    </div>
+    <form class="form-wrapper">
+        <div class="form-wrapper__block">
+            <div class="form-wrapper__title">
+                Ссылка на макет в Figma
+            </div>
+            <div class="form-wrapper__input-container">
+                <input type="text" placeholder="Например: https://www.figma.com/" class="form-wrapper__input">
+                <span class="form-wrapper__text">Не принимаем другие форматы - только figma</span>
+                <img src="./img/form-wrapper/pen.svg" alt="">
+            </div>
+        </div>
+        <div class="form-wrapper__block">
+            <div class="form-wrapper__title">
+                Имя и фамилия
+            </div>
+            <div class="form-wrapper__input-container">
+                <input type="text" placeholder="Например: Иван Иванов" class="form-wrapper__input">
+                <span class="form-wrapper__text">Будут опубликованы на странице с вашим макетом</span>
+                <img src="./img/form-wrapper/pen.svg" alt="">
+            </div>
+        </div>
+        <div class="form-wrapper__title form-wrapper__title--outside">
+            Контактные данные
+        </div>
+        <div class="form-wrapper__block">
+            <div class="form-wrapper__title">
+                Email
+            </div>
+            <div class="form-wrapper__input-container">
+                <input type="email" placeholder="example@gmail.com" class="form-wrapper__input" value="Ivan@gmail.com">
+                <img src="./img/form-wrapper/pen.svg" alt="">
+            </div>
+        </div>
+        <div class="form-wrapper__block">
+            <div class="form-wrapper__title">
+                Телефон
+            </div>
+            <div class="form-wrapper__input-container">
+                <input type="tel" placeholder="+7 495 434 33 33" class="form-wrapper__input" value="+7 495 434 33 33">
+                <img src="./img/form-wrapper/pen.svg" alt="">
+            </div>
+        </div>
+        <div class="form-wrapper__block">
+            <div class="form-wrapper__title">
+                Telegram
+            </div>
+            <div class="form-wrapper__input-container">
+                <input type="text" placeholder="@ivanov" class="form-wrapper__input" value="@ivanov">
+                <img src="./img/form-wrapper/pen.svg" alt="">
+            </div>
+        </div>
+        <div class="form-wrapper__block">
+            <div class="form-wrapper__title">
+            </div>
+            <div class="form-wrapper__input-container">
+                <button type="button" class="btn form-wrapper__btn btn-add-dashed" onclick="openModal('d')">
+                    <i></i>
+                    <span>Добавить еще</span>
+                </button>
+            </div>
+        </div>
+        <button class="btn form-wrapper__btn-submit" type="button" onclick="openModal('m')">
+            <i></i>
+            <span>Отправить на модерацию</span>
+        </button>
+        <div class="modal" id="modal-m">
+            <div class="modal__body">
+                <img src="./img/icons/modal-close.svg" alt="" class="modal__close-btn" onclick="closeModal()">
+                <div class="modal__title modal__title--center modal__title--small">
+                    Работа отправлена на модерацию
+                </div>
+                <div class="modal__subtitle modal__subtitle--center">
+                    На проверку работы можен уйти до трех рабочих дней. Мы свяжемся с вами.
+                </div>
+                <button class="btn modal__btn" type="submit" id="modal-m-add">
+                    <i></i>
+                    <span>Добавить</span>
+                </button>
+            </div>
+            <div class="modal__overlay" onclick="closeModal()"></div>
+        </div>
+    </form>
+    <div class="for-designers__link">
+        Нажимая кнопку отправить вы принимаете <a href="">условия передачи макета</a>
+    </div>
+    <div class="modal" id="modal-d">
+        <div class="modal__body">
+            <img src="./img/icons/modal-close.svg" alt="" class="modal__close-btn" id="close-modal-btn"
+                onclick="closeModal()">
+            <div class="modal__title">
+                Добавить
+            </div>
+            <form class="form-wrapper">
+                <div class="form-wrapper__block">
+                    <div class="form-wrapper__input-container">
+                        <input type="text" placeholder="Название социальной сети" class="form-wrapper__input">
+                        <img src="./img/form-wrapper/pen.svg" alt="">
+                    </div>
+                </div>
+                <div class="form-wrapper__block">
+                    <div class="form-wrapper__input-container">
+                        <input type="text" placeholder="Ссылка" class="form-wrapper__input">
+                        <img src="./img/form-wrapper/link.svg" alt="">
+                    </div>
+                </div>
+                <button class="btn form-wrapper__btn-submit" type="submit">
+                    <i></i>
+                    <span>Добавить</span>
+                </button>
+            </form>
+        </div>
+        <div class="modal__overlay" onclick="closeModal()"></div>
+    </div>
+</section>
+
+<footer class="footer">
+	<div class="wrapper footer__wrap flex">
+		<div class="footer__first">
+			<a href="#" class="logo">
+				<img src="img/icons/logo.svg" alt="">
+			</a>
+		</div>
+		<a href="#" class="footer__confidentiality">Политика конфиденциальности</a>
+		<div class="footer__last flex">
+			<a href="#" class="footer__link">Вход</a>
+			<a href="#" class="footer__link">Регистрация</a>
+		</div>
+	</div>
+</footer>
+
+
+    </div>
+    <script src="js/libs.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

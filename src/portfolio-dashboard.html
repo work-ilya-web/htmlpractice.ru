@@ -1,0 +1,959 @@
+@@include('inc/doc-start.html', {
+"title": "Портфолио"
+})
+
+@@include('inc/page-header-user.html')
+
+<section class="portfolio portfolio--dashboard">
+
+    <img src="./img/portfolio-dashboard/author.png" alt="" class="portfolio__avatar">
+    <div class="portfolio__title h1">
+        Разин Андрей
+    </div>
+    <div class="wrapper">
+        <div class="portfolio__contacts">
+            <div class="portfolio__prof">
+                Frontend developer
+            </div>
+            <a href="" class="portfolio__link">
+                +7 (904) 543 54
+            </a>
+            <a href="" class="portfolio__link">
+                razinofficial@gmail.com
+            </a>
+        </div>
+    </div>
+    <div class="grid-wrapper">
+        <div class="wrapper">
+            <div class="grid-contents">
+				<button class="btn grid-contents__download-link download--js" type="button">
+					<i></i>
+					<span>Загрузить проект</span>
+				</button>
+				<button class="btn btn-layout grid-contents__layout-link edit--js" type="button">
+					<i></i>
+					<span>Редактировать информацию </span>
+				</button>
+                <div class="grid-contents__item">
+                    <div class="grid-contents__title grid-contents__title--span">
+                        Опыт <span>10 лет</span>
+                    </div>
+                </div>
+                <div class="grid-contents__item grid-contents__item--myself">
+                    <div class="grid-contents__title">
+                        Обо мне
+                    </div>
+                    <div class="grid-contents__line"></div>
+                    <div class="grid-contents__text">
+                        Трудоголик до мозга гостей. Перфекционист. Постоянно обучаюсь новому.
+                    </div>
+                </div>
+                <div class="grid-contents__item grid-contents__item--skills">
+                    <div class="grid-contents__title">
+                        Навыки
+                    </div>
+                    <div class="grid-contents__line"></div>
+                    <div class="grid-contents__text">
+                        Cоздание сайтов: от Landing page до eCommerce проектов, HTML валидная, адаптивная верстка.
+                    </div>
+                    <div class="grid-contents__text">
+                        Посадка и разработка сайтов "под ключ" на CMS: 1С-Битрикс, Wordpress, Joomla, ModX, Opencart.
+                        Интеграция и настройка CRM Битрикс 24
+                    </div>
+                </div>
+                <div class="grid-contents__item grid-contents__item--author">
+                    <div class="grid-contents__title">
+                        Контакты
+                    </div>
+                    <div class="grid-contents__line"></div>
+                    <div class="grid-contents__author-contacts">
+                        <div class="grid-contents__author-item">
+                            <span>
+                                тел
+                            </span>
+                            <a href="">
+                                +7 (904) 543 54
+                            </a>
+                        </div>
+                        <div class="grid-contents__author-item">
+                            <span>
+                                email
+                            </span>
+                            <a href="">
+                                razinofficial@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="grid-contents__line grid-contents__line--last"></div>
+                    <div class="grid-contents__socials">
+                        <a href="" class="btn"> <i></i> <span> vk </span> </a>
+                        <a href="" class="btn"> <i></i> <span> behance </span> </a>
+                        <a href="" class="btn"> <i></i> <span> dribbble </span> </a>
+                        <a href="" class="btn"> <i></i> <span> telegram </span> </a>
+                        <a href="" class="btn"> <i></i> <span> instagram </span> </a>
+                    </div>
+                </div>
+                <div class="grid-contents__item grid-contents__item--status">
+                    <div class="grid-contents__title">
+                        Статус
+                    </div>
+                    <div class="grid-contents__line"></div>
+                    <div class="grid-contents__status">
+                        <label class="grid-contents__switch">
+                            <input type="checkbox" onclick="switchMode()" checked id="switch-mode">
+                            <span class="slider round"></span>
+                        </label>
+                        <div class="grid-contents__text grid-contents__text--free">
+                            Свободен для проектов
+                        </div>
+                        <div class="grid-contents__text grid-contents__text--busy">
+                            В данный момент занят
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-list">
+                <div class="tabs">
+                    <a href="#" class="tabs__btn tabs__btn--active" data-project="1">
+                        Опубликованные
+                        <span>
+                            12
+                        </span>
+                    </a>
+                    <a href="#" class="tabs__btn" data-project="2">
+                        На проверке
+                        <span>
+                            1
+                        </span>
+                    </a>
+                    <a href="#" class="tabs__btn" data-project="3">
+                        Требуют доработки
+                        <span>
+                            2
+                        </span>
+                    </a>
+                    <a href="#" class="tabs__btn" data-project="4">
+                        Скрытые
+                        <span>
+                            2
+                        </span>
+                    </a>
+                </div>
+				<div class="portfolio__container">
+					<div class="portfolio__block active" data-project-block="1">
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('0')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('0')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<a href="" class="info__title">
+									Lithops - Open Source Typeface
+								</a>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--medium">
+									<span></span>
+									<span></span>
+									<span></span>
+									Средний
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Блог.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('1')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('1')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<div class="info__title">
+									Lithops - Open Source Typeface
+								</div>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--hard">
+									<span></span>
+									<span></span>
+									<span></span>
+									Трудный
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Коллекция.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('2')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('2')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<div class="info__title">
+									Lithops - Open Source Typeface
+								</div>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--easy">
+									<span></span>
+									<span></span>
+									<span></span>
+									Легкий
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('0')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('0')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<a href="" class="info__title">
+									Lithops - Open Source Typeface
+								</a>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--medium">
+									<span></span>
+									<span></span>
+									<span></span>
+									Средний
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Блог.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('1')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('1')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<div class="info__title">
+									Lithops - Open Source Typeface
+								</div>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--hard">
+									<span></span>
+									<span></span>
+									<span></span>
+									Трудный
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Коллекция.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('2')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('2')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<div class="info__title">
+									Lithops - Open Source Typeface
+								</div>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--easy">
+									<span></span>
+									<span></span>
+									<span></span>
+									Легкий
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('0')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('0')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<a href="" class="info__title">
+									Lithops - Open Source Typeface
+								</a>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--medium">
+									<span></span>
+									<span></span>
+									<span></span>
+									Средний
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Блог.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('1')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('1')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<div class="info__title">
+									Lithops - Open Source Typeface
+								</div>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--hard">
+									<span></span>
+									<span></span>
+									<span></span>
+									Трудный
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Коллекция.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('2')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('2')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<div class="info__title">
+									Lithops - Open Source Typeface
+								</div>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--easy">
+									<span></span>
+									<span></span>
+									<span></span>
+									Легкий
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('0')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('0')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<a href="" class="info__title">
+									Lithops - Open Source Typeface
+								</a>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--medium">
+									<span></span>
+									<span></span>
+									<span></span>
+									Средний
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Блог.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('1')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('1')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<div class="info__title">
+									Lithops - Open Source Typeface
+								</div>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--hard">
+									<span></span>
+									<span></span>
+									<span></span>
+									Трудный
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Коллекция.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__layer"></div>
+							<div class="project-list__option-list">
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Скрыть
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Редактировать
+									</span>
+								</div>
+								<div class="btn project-list__option-item">
+									<i></i>
+									<span>
+										Удалить
+									</span>
+								</div>
+							</div>
+							<div class="project-list__option-btn" onclick="openOption('2')"></div>
+							<div class="project-list__option-overlay" onclick="closeOptions('2')"></div>
+							<div class="project-list__layer-second"></div>
+							<div class="info">
+								<div class="info__title">
+									Lithops - Open Source Typeface
+								</div>
+								<div class="info__category">
+									Интефейс
+								</div>
+								<div class="info__level info__level--easy">
+									<span></span>
+									<span></span>
+									<span></span>
+									Легкий
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__block" data-project-block="2">
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__animation">
+								<img src="img/portfolio-dashboard/animation.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="portfolio__block" data-project-block="3">
+						<div class="portfolio__block-desc">Можно опубликовать работу в текущем состоянии, но в ней на наш взгляд имеются не доработки</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+							</div>
+							<a href="#" class="project-list__btn btn">
+								<i></i>
+								<span>Смотреть комментарии</span>
+							</a>
+						</div>
+					</div>
+					<div class="portfolio__block" data-project-block="4">
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__viewing">
+								<div class="project-list__viewing-icon">
+									<img src="img/portfolio-dashboard/viewing.svg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="project-list__item">
+							<div class="project-list__img-wrap">
+								<img src="./img/catalog/Cтраница товара.png" alt="" class="project-list__img">
+							</div>
+							<div class="project-list__viewing">
+								<div class="project-list__viewing-icon">
+									<img src="img/portfolio-dashboard/viewing.svg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="edit-modal" class="edit-modal modal modal--big" style="display: none;">
+	<div class="modal__closed flex-center svg-contain" data-fancybox-close>
+		<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g clip-path="url(#clip0_675_6043)">
+				<path d="M15.0966 14L20.7666 8.33004C20.894 8.18125 20.9606 7.98986 20.953 7.79411C20.9455 7.59836 20.8643 7.41268 20.7258 7.27416C20.5873 7.13564 20.4016 7.05449 20.2059 7.04693C20.0101 7.03937 19.8187 7.10595 19.6699 7.23337L13.9999 12.9034L8.32993 7.2256C8.18114 7.09818 7.98974 7.03159 7.79399 7.03915C7.59825 7.04672 7.41256 7.12786 7.27404 7.26638C7.13552 7.4049 7.05438 7.59058 7.04682 7.78633C7.03926 7.98208 7.10584 8.17347 7.23326 8.32226L12.9033 14L7.22548 19.67C7.14406 19.7398 7.07793 19.8256 7.03125 19.9221C6.98457 20.0186 6.95833 20.1237 6.95419 20.2308C6.95006 20.3379 6.9681 20.4447 7.00721 20.5445C7.04631 20.6443 7.10562 20.735 7.18142 20.8108C7.25722 20.8866 7.34787 20.9459 7.44767 20.985C7.54748 21.0241 7.6543 21.0421 7.76141 21.038C7.86853 21.0339 7.97363 21.0076 8.07012 20.9609C8.16662 20.9143 8.25242 20.8481 8.32215 20.7667L13.9999 15.0967L19.6699 20.7667C19.8187 20.8941 20.0101 20.9607 20.2059 20.9531C20.4016 20.9456 20.5873 20.8644 20.7258 20.7259C20.8643 20.5874 20.9455 20.4017 20.953 20.206C20.9606 20.0102 20.894 19.8188 20.7666 19.67L15.0966 14Z" fill="#AEAFB8"/>
+			</g>
+			<defs>
+				<clipPath id="clip0_675_6043">
+					<rect width="28" height="28" fill="white"/>
+				</clipPath>
+			</defs>
+		</svg>
+	</div>
+	<div class="modal__body">
+		<div class="modal__title">Редактировать информацию</div>
+		<form class="form-wrapper form-wrapper--item">
+			<div class="form-wrapper__body">
+				<div class="form-wrapper__box">
+					<div class="form-wrapper__title">Опыт (лет)</div>
+					<div class="form-wrapper__input-container">
+						<input type="text" value="10" placeholder="" class="form-wrapper__input">
+						<img src="./img/form-wrapper/pen.svg" alt="">
+					</div>
+				</div>
+				<div class="form-wrapper__box">
+					<div class="form-wrapper__title">Обо мне</div>
+					<div class="form-wrapper__input-container">
+						<textarea type="text" value="" placeholder="" class="form-wrapper__input">Трудоголик до мозга гостей. Перфекционист. Постоянно обучаюсь новому.</textarea>
+						<img src="./img/form-wrapper/pen.svg" alt="">
+					</div>
+				</div>
+				<div class="form-wrapper__box">
+					<div class="form-wrapper__title">Навыки</div>
+					<div class="form-wrapper__input-container">
+						<textarea type="text" value="" placeholder="" class="form-wrapper__input">Cоздание сайтов: от Landing page до eCommerce проектов, HTML валидная, адаптивная верстка. Посадка и разработка сайтов 'под ключ' на CMS: 1С-Битрикс, Wordpress, Joomla, ModX, Opencart. Интеграция и настройка CRM Битрикс 24</textarea>
+						<img src="./img/form-wrapper/pen.svg" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="form-wrapper__container">
+				<div class="form-wrapper__title form-wrapper__title--outside">Контакты</div>
+				<div class="form-wrapper__block">
+					<div class="form-wrapper__title">Email</div>
+					<div class="form-wrapper__input-container">
+						<input type="email" placeholder="example@gmail.com" class="form-wrapper__input" value="Ivan@gmail.com">
+						<img src="./img/form-wrapper/pen.svg" alt="">
+					</div>
+				</div>
+				<div class="form-wrapper__block">
+					<div class="form-wrapper__title">Телефон</div>
+					<div class="form-wrapper__input-container">
+						<input type="tel" placeholder="+7 495 434 33 33" class="form-wrapper__input" value="+7 495 434 33 33">
+						<img src="./img/form-wrapper/pen.svg" alt="">
+					</div>
+				</div>
+				<div class="form-wrapper__block">
+					<div class="form-wrapper__title">Telegram</div>
+					<div class="form-wrapper__input-container">
+						<input type="text" placeholder="@ivanov" class="form-wrapper__input" value="@ivanov">
+						<img src="./img/form-wrapper/pen.svg" alt="">
+					</div>
+				</div>
+				<div class="form-wrapper__block">
+					<div class="form-wrapper__title">
+					</div>
+					<div class="form-wrapper__input-container">
+						<button type="button" class="btn form-wrapper__btn btn-add-dashed add--js">
+							<i></i>
+							<span>Добавить еще</span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<button class="btn form-wrapper__btn-submit" type="button" onclick="openModal('m')">
+				<i></i>
+				<span>Сохранить</span>
+			</button>
+		</form>
+	</div>
+</div><!-- end edit-modal -->
+
+<div id="add-modal" class="add-modal modal" style="display: none;">
+	<div class="modal__closed flex-center svg-contain" data-fancybox-close>
+		<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g clip-path="url(#clip0_675_6043)">
+				<path d="M15.0966 14L20.7666 8.33004C20.894 8.18125 20.9606 7.98986 20.953 7.79411C20.9455 7.59836 20.8643 7.41268 20.7258 7.27416C20.5873 7.13564 20.4016 7.05449 20.2059 7.04693C20.0101 7.03937 19.8187 7.10595 19.6699 7.23337L13.9999 12.9034L8.32993 7.2256C8.18114 7.09818 7.98974 7.03159 7.79399 7.03915C7.59825 7.04672 7.41256 7.12786 7.27404 7.26638C7.13552 7.4049 7.05438 7.59058 7.04682 7.78633C7.03926 7.98208 7.10584 8.17347 7.23326 8.32226L12.9033 14L7.22548 19.67C7.14406 19.7398 7.07793 19.8256 7.03125 19.9221C6.98457 20.0186 6.95833 20.1237 6.95419 20.2308C6.95006 20.3379 6.9681 20.4447 7.00721 20.5445C7.04631 20.6443 7.10562 20.735 7.18142 20.8108C7.25722 20.8866 7.34787 20.9459 7.44767 20.985C7.54748 21.0241 7.6543 21.0421 7.76141 21.038C7.86853 21.0339 7.97363 21.0076 8.07012 20.9609C8.16662 20.9143 8.25242 20.8481 8.32215 20.7667L13.9999 15.0967L19.6699 20.7667C19.8187 20.8941 20.0101 20.9607 20.2059 20.9531C20.4016 20.9456 20.5873 20.8644 20.7258 20.7259C20.8643 20.5874 20.9455 20.4017 20.953 20.206C20.9606 20.0102 20.894 19.8188 20.7666 19.67L15.0966 14Z" fill="#AEAFB8"/>
+			</g>
+			<defs>
+				<clipPath id="clip0_675_6043">
+					<rect width="28" height="28" fill="white"/>
+				</clipPath>
+			</defs>
+		</svg>
+	</div>
+	<div class="modal__body">
+		<div class="modal__title">Добавить</div>
+		<form class="form-wrapper">
+			<div class="form-wrapper__block">
+				<div class="form-wrapper__input-container">
+					<input type="text" placeholder="Название социальной сети" class="form-wrapper__input">
+					<img src="./img/form-wrapper/pen.svg" alt="">
+				</div>
+			</div>
+			<div class="form-wrapper__block">
+				<div class="form-wrapper__input-container">
+					<input type="text" placeholder="Ссылка" class="form-wrapper__input">
+					<img src="./img/form-wrapper/link.svg" alt="">
+				</div>
+			</div>
+			<button class="btn form-wrapper__btn-submit" type="submit">
+				<i></i>
+				<span>Добавить</span>
+			</button>
+		</form>
+	</div>
+</div><!-- end add-modal -->
+
+<div id="download-modal" class="download-modal modal modal--big" style="display: none;">
+	<div class="modal__closed flex-center svg-contain" data-fancybox-close>
+		<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g clip-path="url(#clip0_675_6043)">
+				<path d="M15.0966 14L20.7666 8.33004C20.894 8.18125 20.9606 7.98986 20.953 7.79411C20.9455 7.59836 20.8643 7.41268 20.7258 7.27416C20.5873 7.13564 20.4016 7.05449 20.2059 7.04693C20.0101 7.03937 19.8187 7.10595 19.6699 7.23337L13.9999 12.9034L8.32993 7.2256C8.18114 7.09818 7.98974 7.03159 7.79399 7.03915C7.59825 7.04672 7.41256 7.12786 7.27404 7.26638C7.13552 7.4049 7.05438 7.59058 7.04682 7.78633C7.03926 7.98208 7.10584 8.17347 7.23326 8.32226L12.9033 14L7.22548 19.67C7.14406 19.7398 7.07793 19.8256 7.03125 19.9221C6.98457 20.0186 6.95833 20.1237 6.95419 20.2308C6.95006 20.3379 6.9681 20.4447 7.00721 20.5445C7.04631 20.6443 7.10562 20.735 7.18142 20.8108C7.25722 20.8866 7.34787 20.9459 7.44767 20.985C7.54748 21.0241 7.6543 21.0421 7.76141 21.038C7.86853 21.0339 7.97363 21.0076 8.07012 20.9609C8.16662 20.9143 8.25242 20.8481 8.32215 20.7667L13.9999 15.0967L19.6699 20.7667C19.8187 20.8941 20.0101 20.9607 20.2059 20.9531C20.4016 20.9456 20.5873 20.8644 20.7258 20.7259C20.8643 20.5874 20.9455 20.4017 20.953 20.206C20.9606 20.0102 20.894 19.8188 20.7666 19.67L15.0966 14Z" fill="#AEAFB8"/>
+			</g>
+			<defs>
+				<clipPath id="clip0_675_6043">
+					<rect width="28" height="28" fill="white"/>
+				</clipPath>
+			</defs>
+		</svg>
+	</div>
+	<div class="modal__body">
+		<div class="modal__title">Загрузить работу</div>
+		<form class="form-wrapper form-wrapper--item">
+			<div class="form-wrapper__body">
+				<div class="form-wrapper__box">
+					<div class="form-wrapper__input-container">
+						<button type="button" class="btn form-wrapper__btn btn-add-dashed add--js">
+							<i></i>
+							<span>Выбрать проект из каталога</span>
+						</button>
+					</div>
+				</div>
+				<div class="form-wrapper__box">
+					<div class="form-wrapper__title">Ссылка на публичный репозиторий Git или на файлообменик</div>
+					<div class="form-wrapper__input-container">
+						<input type="text" value="" placeholder="Например: https://github.com/work-ilya-web/agenxy" class="form-wrapper__input">
+					</div>
+				</div>
+				<div class="form-wrapper__box">
+					<div class="form-wrapper__title">Телеграм на случай связи с для уточнения деталей</div>
+					<div class="form-wrapper__input-container">
+						<input type="text" value="" placeholder="Например: @html_practice" class="form-wrapper__input">
+					</div>
+				</div>
+				<div class="form-wrapper__box">
+					<div class="form-wrapper__title">Вопросы</div>
+					<div class="form-wrapper__input-container">
+						<textarea type="text" value="" placeholder="Что вызвало сложности. Мы обратим на это больше внимания." class="form-wrapper__input"></textarea>
+					</div>
+				</div>
+				<div class="form-wrapper__box">
+					<div class="form-wrapper__title">Инструкция по сборщику</div>
+					<div class="form-wrapper__input-container">
+						<textarea type="text" value="" placeholder="Если вы использовали gulp сборщик, напишите инструкцию по запуску и версию node js на которой работали. Например: 1. npm install  2. npm run dev Версия node js 14.1.2" class="form-wrapper__input"></textarea>
+					</div>
+				</div>
+			</div>
+			<button class="btn form-wrapper__btn-submit loading--js" type="button">
+				<i></i>
+				<span>Отправить на проверку</span>
+			</button>
+		</form>
+	</div>
+</div><!-- end download-modal -->
+
+<div id="loading-modal" class="loading-modal modal modal-item" style="display: none;">
+	<div class="modal__closed flex-center svg-contain" data-fancybox-close>
+		<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g clip-path="url(#clip0_675_6043)">
+				<path d="M15.0966 14L20.7666 8.33004C20.894 8.18125 20.9606 7.98986 20.953 7.79411C20.9455 7.59836 20.8643 7.41268 20.7258 7.27416C20.5873 7.13564 20.4016 7.05449 20.2059 7.04693C20.0101 7.03937 19.8187 7.10595 19.6699 7.23337L13.9999 12.9034L8.32993 7.2256C8.18114 7.09818 7.98974 7.03159 7.79399 7.03915C7.59825 7.04672 7.41256 7.12786 7.27404 7.26638C7.13552 7.4049 7.05438 7.59058 7.04682 7.78633C7.03926 7.98208 7.10584 8.17347 7.23326 8.32226L12.9033 14L7.22548 19.67C7.14406 19.7398 7.07793 19.8256 7.03125 19.9221C6.98457 20.0186 6.95833 20.1237 6.95419 20.2308C6.95006 20.3379 6.9681 20.4447 7.00721 20.5445C7.04631 20.6443 7.10562 20.735 7.18142 20.8108C7.25722 20.8866 7.34787 20.9459 7.44767 20.985C7.54748 21.0241 7.6543 21.0421 7.76141 21.038C7.86853 21.0339 7.97363 21.0076 8.07012 20.9609C8.16662 20.9143 8.25242 20.8481 8.32215 20.7667L13.9999 15.0967L19.6699 20.7667C19.8187 20.8941 20.0101 20.9607 20.2059 20.9531C20.4016 20.9456 20.5873 20.8644 20.7258 20.7259C20.8643 20.5874 20.9455 20.4017 20.953 20.206C20.9606 20.0102 20.894 19.8188 20.7666 19.67L15.0966 14Z" fill="#AEAFB8"/>
+			</g>
+			<defs>
+				<clipPath id="clip0_675_6043">
+					<rect width="28" height="28" fill="white"/>
+				</clipPath>
+			</defs>
+		</svg>
+	</div>
+	<div class="modal__body">
+		<div class="modal-item__body">
+			<div class="modal-item__animation">
+				<img src="img/modal/animation.svg" alt="">
+			</div>
+			<div class="modal-item__title">Работа загружена и находится<br> на проверке</div>
+			<div class="modal-item__desc">На проверку работы можен уйти до трех рабочих дней. Вы получите уведомление о завершение проверки.</div>
+			<a href="#" class="btn modal-item__btn published--js" type="button">
+				<i></i>
+				<span>Понятно</span>
+			</a>
+		</div>
+	</div>
+</div><!-- end loading-modal -->
+
+<div id="published-modal" class="published-modal modal modal-item" style="display: none;">
+	<div class="modal__closed flex-center svg-contain" data-fancybox-close>
+		<svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<g clip-path="url(#clip0_675_6043)">
+				<path d="M15.0966 14L20.7666 8.33004C20.894 8.18125 20.9606 7.98986 20.953 7.79411C20.9455 7.59836 20.8643 7.41268 20.7258 7.27416C20.5873 7.13564 20.4016 7.05449 20.2059 7.04693C20.0101 7.03937 19.8187 7.10595 19.6699 7.23337L13.9999 12.9034L8.32993 7.2256C8.18114 7.09818 7.98974 7.03159 7.79399 7.03915C7.59825 7.04672 7.41256 7.12786 7.27404 7.26638C7.13552 7.4049 7.05438 7.59058 7.04682 7.78633C7.03926 7.98208 7.10584 8.17347 7.23326 8.32226L12.9033 14L7.22548 19.67C7.14406 19.7398 7.07793 19.8256 7.03125 19.9221C6.98457 20.0186 6.95833 20.1237 6.95419 20.2308C6.95006 20.3379 6.9681 20.4447 7.00721 20.5445C7.04631 20.6443 7.10562 20.735 7.18142 20.8108C7.25722 20.8866 7.34787 20.9459 7.44767 20.985C7.54748 21.0241 7.6543 21.0421 7.76141 21.038C7.86853 21.0339 7.97363 21.0076 8.07012 20.9609C8.16662 20.9143 8.25242 20.8481 8.32215 20.7667L13.9999 15.0967L19.6699 20.7667C19.8187 20.8941 20.0101 20.9607 20.2059 20.9531C20.4016 20.9456 20.5873 20.8644 20.7258 20.7259C20.8643 20.5874 20.9455 20.4017 20.953 20.206C20.9606 20.0102 20.894 19.8188 20.7666 19.67L15.0966 14Z" fill="#AEAFB8"/>
+			</g>
+			<defs>
+				<clipPath id="clip0_675_6043">
+					<rect width="28" height="28" fill="white"/>
+				</clipPath>
+			</defs>
+		</svg>
+	</div>
+	<div class="modal__body">
+		<div class="modal-item__body">
+			<div class="modal-item__published">
+				<img src="img/modal/published.svg" alt="">
+			</div>
+			<div class="modal-item__title">Работа опубликована</div>
+		</div>
+		<form class="form-wrapper">
+			<div class="form-wrapper__block">
+				<div class="form-wrapper__title">Ссылка на портфолио</div>
+				<div class="form-wrapper__input-container">
+					<input type="text" value="https://html-practice.ru/user/oleg_ivan" placeholder="" class="form-wrapper__input">
+					<img src="./img/form-wrapper/link-icon.svg" alt="">
+				</div>
+			</div>
+			<div class="form-wrapper__block">
+				<div class="form-wrapper__title">Ссылка на работу</div>
+				<div class="form-wrapper__input-container">
+					<input type="text" value="https://html-practice.ru/user/oleg_ivan" placeholder="" class="form-wrapper__input">
+					<img src="./img/form-wrapper/link-icon.svg" alt="">
+				</div>
+			</div>
+			<button class="btn modal-item__btn" type="submit" data-fancybox-close>
+				<i></i>
+				<span>В порфолио</span>
+			</button>
+		</form>
+	</div>
+</div><!-- end published-modal -->
+
+@@include('inc/page-footer.html')
+
+@@include('inc/doc-end.html')
