@@ -195,7 +195,7 @@
 			#html-dashed-lines-2,
 			#html-dashed-lines-3,
 			#html-dashed-lines-4 {
-				transform: translateY();
+				transform: translateY(0);
 				transform: translateX(0);
 			}
 			#html-dashed-lines-1 {
@@ -260,7 +260,7 @@
 			#css-dashed-lines-2,
 			#css-dashed-lines-3,
 			#css-dashed-lines-4 {
-				transform: translateY();
+				transform: translateY(0);
 				transform: translateX(0);
 			}
 			#css-dashed-lines-1 {
@@ -283,7 +283,7 @@
 		.js-svg.active {
 			#js-text {
 				path {
-					fill: #FAFF00;
+					fill: #faff00;
 				}
 			}
 			#js-corner-1,
@@ -367,6 +367,7 @@
 		&__img {
 			width: 1400px;
 			right: calc(50% - 1260px);
+			bottom: -210px;
 		}
 		&__block {
 			margin-top: 40px;
@@ -423,13 +424,71 @@
 			width: 100%;
 			right: 0;
 			bottom: 0;
-			img {
-				&:first-child {
-					display: none;
+			.html-css-js-svg {
+				width: auto;
+				height: 100%;
+				top: 50px;
+				#js-line-1,
+				#css-dashed-lines-1,
+				#html-dashed-lines-1 {
+					transform: translateY(140%);
 				}
-				&:last-child {
-					display: block;
+				#js-line-2,
+				#css-dashed-lines-2,
+				#html-dashed-lines-2 {
+					transform: translateY(100%);
 				}
+				#js-line-3,
+				#css-dashed-lines-4,
+				#html-dashed-lines-3 {
+					transform: translateX(100%);
+				}
+				#js-line-4,
+				#css-dashed-lines-3,
+				#html-dashed-lines-4 {
+					transform: translateX(-100%);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.promo {
+		&__img {
+			.html-css-js-svg {
+				top: 40px;
+				
+			}
+		}
+	}
+}
+@media (max-width: 560px) {
+	.promo {
+		&__img {
+			.html-css-js-svg {
+				top: 36px;
+				
+			}
+		}
+	}
+}
+@media (max-width: 429px) {
+	.promo {
+		&__img {
+			.html-css-js-svg {
+				top: 28px;
+				
+			}
+		}
+	}
+}
+@media (max-width: 390px) {
+	.promo {
+		&__img {
+			.html-css-js-svg {
+				top: 25px;
+				
 			}
 		}
 	}
