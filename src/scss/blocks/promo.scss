@@ -33,11 +33,316 @@
 		position: absolute;
 		width: 1620px;
 		height: auto;
-		bottom: -300px;
+		bottom: -60px;
 		right: calc(50% - 1362px);
 		img {
 			&:last-child {
 				display: none;
+			}
+		}
+	}
+	&__inner-img {
+		position: relative;
+		img {
+			display: block !important;
+		}
+		.html-css-js-svg {
+			position: absolute;
+			top: 90px;
+			left: 0;
+			#html-text {
+				transition: 0.3s ease-in-out;
+				fill: #c7d1d1;
+			}
+			#js-text,
+			#css-text {
+				path {
+					transition: 0.3s ease-in-out;
+					fill: #c7d1d1;
+				}
+				#Vector_3 {
+					fill: none;
+				}
+			}
+			#js-corner-4,
+			#js-corner-3,
+			#js-corner-2,
+			#js-corner-1,
+			#css-corner-4,
+			#css-corner-3,
+			#css-corner-2,
+			#css-corner-1,
+			#corner-1,
+			#corner-2,
+			#corner-3,
+			#corner-4 {
+				transform: scale(0);
+				transition: all 400ms cubic-bezier(0.47, 1.64, 0.41, 0.8);
+			}
+			#js-line-4_2,
+			#js-line-3_2,
+			#js-line-2_2,
+			#js-line-1_2,
+			#css-line-4,
+			#css-line-3,
+			#css-line-2,
+			#css-line-1,
+			#line-1,
+			#line-2,
+			#line-3,
+			#line-4 {
+				opacity: 0;
+				transition: 0.4s ease-in-out;
+			}
+			#css-line-4,
+			#line-1 {
+				transform: translateX(-20px);
+			}
+			#css-line-3,
+			#line-2 {
+				transform: translateY(-20px);
+			}
+			#css-line-2,
+			#line-3 {
+				transform: translateX(20px);
+			}
+			#css-line-1,
+			#line-4 {
+				transform: translateY(20px);
+			}
+			#js-line-4,
+			#js-line-3,
+			#js-line-2,
+			#js-line-1,
+			#css-dashed-lines-1,
+			#css-dashed-lines-2,
+			#css-dashed-lines-3,
+			#css-dashed-lines-4,
+			#html-dashed-lines-1,
+			#html-dashed-lines-2,
+			#html-dashed-lines-3,
+			#html-dashed-lines-4 {
+				transition: 0.5s ease-in-out;
+			}
+			#js-line-1,
+			#css-dashed-lines-1,
+			#html-dashed-lines-1 {
+				transform: translateY(-140%);
+			}
+			#js-line-2,
+			#css-dashed-lines-2,
+			#html-dashed-lines-2 {
+				transform: translateY(100%);
+			}
+			#js-line-3,
+			#css-dashed-lines-4,
+			#html-dashed-lines-3 {
+				transform: translateX(100%);
+			}
+			#js-line-4,
+			#css-dashed-lines-3,
+			#html-dashed-lines-4 {
+				transform: translateX(-100%);
+			}
+			#js-span,
+			#css-span,
+			#span {
+				transform: translateX(-20px);
+				opacity: 0;
+				transition: 0.5s ease-in-out;
+			}
+		}
+		.html-svg.active {
+			#html-text {
+				fill: #f86726;
+			}
+			#corner-1,
+			#corner-2,
+			#corner-3,
+			#corner-4 {
+				transform: scale(1);
+			}
+			#corner-2 {
+				transition-delay: 0.1s;
+			}
+			#corner-3 {
+				transition-delay: 0.2s;
+			}
+			#corner-4 {
+				transition-delay: 0.3s;
+			}
+			#line-1,
+			#line-2,
+			#line-3,
+			#line-4 {
+				transform: translateX(0);
+				transform: translateY(0);
+				opacity: 1;
+			}
+			#line-1 {
+				transition-delay: 0.1s;
+			}
+			#line-2 {
+				transition-delay: 0.3s;
+			}
+			#line-3 {
+				transition-delay: 0.5s;
+			}
+			#line-4 {
+				transition-delay: 0.7s;
+			}
+			#html-dashed-lines-1,
+			#html-dashed-lines-2,
+			#html-dashed-lines-3,
+			#html-dashed-lines-4 {
+				transform: translateY();
+				transform: translateX(0);
+			}
+			#html-dashed-lines-1 {
+				transition-delay: 0.1s;
+			}
+			#html-dashed-lines-2 {
+				transition-delay: 0.7s;
+			}
+			#html-dashed-lines-3 {
+				transition-delay: 0.3s;
+			}
+			#html-dashed-lines-4 {
+				transition-delay: 0.5s;
+			}
+			#span {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+		.css-svg.active {
+			#css-text {
+				path {
+					fill: #1bcece;
+				}
+			}
+			#css-corner-1,
+			#css-corner-2,
+			#css-corner-3,
+			#css-corner-4 {
+				transform: scale(1);
+			}
+			#css-corner-2 {
+				transition-delay: 0.1s;
+			}
+			#css-corner-3 {
+				transition-delay: 0.2s;
+			}
+			#css-corner-4 {
+				transition-delay: 0.3s;
+			}
+			#css-line-1,
+			#css-line-2,
+			#css-line-3,
+			#css-line-4 {
+				transform: translateX(0);
+				transform: translateY(0);
+				opacity: 1;
+			}
+			#css-line-1 {
+				transition-delay: 0.1s;
+			}
+			#css-line-2 {
+				transition-delay: 0.3s;
+			}
+			#css-line-3 {
+				transition-delay: 0.5s;
+			}
+			#css-line-4 {
+				transition-delay: 0.7s;
+			}
+			#css-dashed-lines-1,
+			#css-dashed-lines-2,
+			#css-dashed-lines-3,
+			#css-dashed-lines-4 {
+				transform: translateY();
+				transform: translateX(0);
+			}
+			#css-dashed-lines-1 {
+				transition-delay: 0.1s;
+			}
+			#css-dashed-lines-2 {
+				transition-delay: 0.7s;
+			}
+			#css-dashed-lines-3 {
+				transition-delay: 0.3s;
+			}
+			#css-dashed-lines-4 {
+				transition-delay: 0.5s;
+			}
+			#css-span {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+		.js-svg.active {
+			#js-text {
+				path {
+					fill: #FAFF00;
+				}
+			}
+			#js-corner-1,
+			#js-corner-2,
+			#js-corner-3,
+			#js-corner-4 {
+				transform: scale(1);
+			}
+			#js-corner-2 {
+				transition-delay: 0.1s;
+			}
+			#js-corner-3 {
+				transition-delay: 0.2s;
+			}
+			#js-corner-4 {
+				transition-delay: 0.3s;
+			}
+			#js-line-4_2,
+			#js-line-3_2,
+			#js-line-2_2,
+			#js-line-1_2 {
+				transform: translateX(0);
+				transform: translateY(0);
+				opacity: 1;
+			}
+			#js-line-1_2 {
+				transition-delay: 0.1s;
+			}
+			#js-line-2_2 {
+				transition-delay: 0.3s;
+			}
+			#js-line-3_2 {
+				transition-delay: 0.5s;
+			}
+			#js-line-4_2 {
+				transition-delay: 0.7s;
+			}
+			#js-line-1,
+			#js-line-2,
+			#js-line-3,
+			#js-line-4 {
+				transform: translateY(0);
+				transform: translateX(0);
+			}
+			#js-line-1 {
+				transition-delay: 0.1s;
+			}
+			#js-line-2 {
+				transition-delay: 0.7s;
+			}
+			#js-line-3 {
+				transition-delay: 0.3s;
+			}
+			#js-line-4 {
+				transition-delay: 0.5s;
+			}
+			#js-span {
+				transform: translateX(0);
+				opacity: 1;
 			}
 		}
 	}
