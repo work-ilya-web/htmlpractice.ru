@@ -33,6 +33,8 @@
 					letter-spacing: 0.0148em;
 					color: #181b26;
 					position: relative;
+					transition: 0.3s ease-in-out;
+					transition-delay: 0.1s;
 					&::before {
 						content: "";
 						position: absolute;
@@ -51,6 +53,9 @@
 							transform-origin: 0% 50%;
 							transform: scale3d(1, 1, 1);
 						}
+					}
+					&.dark-mode {
+						color: #fff;
 					}
 				}
 			}
@@ -151,14 +156,29 @@
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
-		overflow: hidden;
+		// overflow: hidden;
 		margin-right: 16px;
+		position: relative;
 		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
 			border-radius: 50%;
 			overflow: hidden;
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 10%;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+		}
+
+		&:hover .settings {
+			visibility: visible;
+			opacity: 1;
+			transform: translateX(0);
 		}
 	}
 	&__telegram {
@@ -184,6 +204,45 @@
 	}
 	&--item {
 		position: absolute !important;
+	}
+	.logo {
+		#logo-text {
+			transition: 0.3s ease-in-out;
+			transition-delay: 0.1s;
+		}
+		&.reverse {
+			#logo-icon {
+				animation: logoIconReverse 1s ease;
+				transform-origin: center;
+				transform-box: fill-box;
+			}
+		}
+		&.active {
+			#logo-icon {
+				animation: logoIcon 1s ease;
+				transform-origin: center;
+				transform-box: fill-box;
+			}
+		}
+		@keyframes logoIcon {
+			from {
+				transform: rotate(360deg);
+			}
+			to {
+				transform: rotate(0);
+			}
+		}
+		@keyframes logoIconReverse {
+			from {
+				transform: rotate(0);
+			}
+			to {
+				transform: rotate(360deg);
+			}
+		}
+		#logo-text.dark-mode {
+			fill: #fff;
+		}
 	}
 }
 @media (max-width: 1400px) {

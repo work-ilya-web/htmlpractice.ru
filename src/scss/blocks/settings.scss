@@ -1,0 +1,36 @@
+.settings {
+    position: absolute;
+    top: calc(100% + 4px);
+    right: 0;
+    width: 137px;
+    border: 1px solid #4c4d55;
+    background: #181b26;
+    border-radius: 8px;
+    z-index: 99;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-20px);
+    transition: 0.3s ease-in-out;
+    &__btn {
+        padding: 12px;
+        border-bottom: 1px solid #4c4d55;
+        background: #181b26;
+        margin: 0;
+        width: 100%;
+        display: block;
+        border-radius: 0;
+        cursor: pointer;
+        &:nth-last-of-type() {
+            border-bottom: 0;
+        }
+        i {
+            background: #4c4d55 !important;
+        }
+    }
+    &__btn-text {
+        color: #fff;
+        font-size: 14px;
+        line-height: 14px;
+    }
+}
