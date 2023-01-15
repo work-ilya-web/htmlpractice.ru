@@ -52,6 +52,10 @@
 		line-height: 24px;
 		letter-spacing: 0.0148em;
 		color: #181b26;
+
+		&.dark-mode {
+			color: #fff;
+		}
 	}
 	&__img {
 		position: absolute;

@@ -82,6 +82,9 @@
 				&:last-child {
 					margin-left: 24px;
 				}
+				&.dark-mode {
+					color: #fff;
+				}
 			}
 		}
 	}
